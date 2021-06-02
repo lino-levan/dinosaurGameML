@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <canvas id="canvas" width="400" height="400"></canvas>
+        <div>
+            <p>Play the game for a little bit and then hit the button to generate an AI approximation of you. <br><br> Click above to start and press any button to jump.</p>
+            <div>
+                <label for="epochs">Epochs (Default: 32)</label>
+                <input type="range" min="10" max="128" value="32" id="epochs">
+            </div>
+            <div>
+                <label for="epochs">Batch Size (Default: 12)</label>
+                <input type="range" min="10" max="128" value="12" id="batchSize">
+            </div>
+            <button onclick="giveMeGame()">Generate the AI</button>
+        </div>
+    </body>
+</html>
